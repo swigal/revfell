@@ -1,0 +1,164 @@
+body, html {
+  height: 100%;
+}
+h1, h2, h3, h4, h5, h6, .eb-garamond-400-regular{
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+.eb-garamond-600-regular{
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+  .eb-garamond-400-italic {
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+.allcaps {
+    text-transform: uppercase;
+}
+
+  .header-title {
+    font-size: 2.5rem;
+  }
+  
+  .header-bg-clouds {
+    background-image: url(./assets/clouds_22344bc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+
+  .logoMark {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+.gmc-bg-lapis {
+	background-color: #006db6;
+	color: #fff;
+}
+
+.gmc-bg-dove {
+	background-color: #dcd4cc;
+	color: #000;
+}
+
+.gmc-bg-royalpurple {
+	background-color: #a51890;
+	color: #fff;
+}
+.gmc-bg-gold {
+	background-color: #e0a526;
+	color: #fff;
+}
+.gmc-bg-scarlet {
+	background-color: #f93822;
+	color: #fff;
+}
+.gmc-bg-sage {
+	background-color: #007672;
+	color: #fff;
+}
+
+.gmc-bg-black {
+    background-color: black;
+    color: white;
+}
+
+#home {
+    padding: 100px 0px 100px;
+}
+.rf-py-75 {
+    padding: 75px 0px 75px; 
+}
+
+.header-btn-group {
+    width: 100%; display: flex; flex-wrap: wrap; gap: 1em; box-sizing: border-box; padding-top: 2em;
+}
+
+
+.header-btn-scarlet:hover {
+    background-color: #c06359;
+}
+.header-btn-white {
+    padding: 16px 40px;
+    text-decoration: none;
+    font-weight: bold;
+    color:white;
+}
+
+.header-btn-white:hover {
+    border: 2.5px solid white;
+}
+.rf-btn {
+    padding: 16px 40px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2.5px solid transparent; /* Set initial border */
+}
+
+.rf-btn-white {
+    color: white;
+}
+.rf-btn-black {
+    padding: 16px 40px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2.5px solid transparent;
+    color: black;
+}
+
+.rf-btn-black:hover {
+    
+    border: 2.5px solid black;
+}
+
+.rf-btn:hover {
+    border: 2.5px solid white;
+}
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('./assets/clouds_22344bc.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("/w3images/parallax2.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("/w3images/parallax3.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
