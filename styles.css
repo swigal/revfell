@@ -1,7 +1,4 @@
-body, html {
-  height: 100%;
-}
-h1, h2, h3, h4, h5, h6, .eb-garamond-400-regular{
+  h1, h2, h3, h4, h5, h6, .eb-garamond-400-regular{
     font-family: "EB Garamond", serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -23,7 +20,9 @@ h1, h2, h3, h4, h5, h6, .eb-garamond-400-regular{
 .allcaps {
     text-transform: uppercase;
 }
-
+.rf-widetext {
+  letter-spacing: 1.5px;
+}
   .header-title {
     font-size: 2.5rem;
   }
@@ -35,6 +34,44 @@ h1, h2, h3, h4, h5, h6, .eb-garamond-400-regular{
     background-position: center;
     position: relative;
   }
+
+  body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-format{
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('./assets/clouds_22344bc.jpg');
+  min-height: 100%;
+}
+.bgimg-2 {
+  background-image: url('./assets/worship-banner-v3.jpg');
+  min-height: 400px;
+}
+.bgimg-3 {
+  background-image: url(./assets/revfell-satmap.jpg);
+  min-height: 100%;
+}
+.bgimg-4 {
+  background-image: url(./assets/worship-morning.jpg);
+  min-height: 100%;
+}
+
+/* @media only screen and (max-device-width: 1000px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}*/
 
 
   .logoMark {
@@ -60,6 +97,9 @@ h1, h2, h3, h4, h5, h6, .eb-garamond-400-regular{
 .gmc-bg-gold {
 	background-color: #e0a526;
 	color: #fff;
+}
+.gmc-text-gold {
+  color: #e0a526;
 }
 .gmc-bg-scarlet {
 	background-color: #f93822;
@@ -126,39 +166,21 @@ h1, h2, h3, h4, h5, h6, .eb-garamond-400-regular{
 .rf-btn:hover {
     border: 2.5px solid white;
 }
-/* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.parallax-content {
+  height: 400px;
+  position: relative;
 }
 
-/* First image (Logo. Full height) */
-.bgimg-1 {
-  background-image: url('./assets/clouds_22344bc.jpg');
-  min-height: 100%;
-}
-
-/* Second image (Portfolio) */
-.bgimg-2 {
-  background-image: url("/w3images/parallax2.jpg");
-  min-height: 400px;
-}
-
-/* Third image (Contact) */
-.bgimg-3 {
-  background-image: url("/w3images/parallax3.jpg");
-  min-height: 400px;
-}
-
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
-    min-height: 400px;
-  }
-}
+.vertical-center {
+      display: flex;
+      flex-direction: column; /* Stack children vertically */
+      justify-content: center; /* Center children vertically */
+      align-items: center; /* Center children horizontally */
+      /* Keep the existing absolute positioning styles if they are needed for the container itself */
+      position: absolute;
+      top: 50%; /* Or your desired top value */
+      left: 0; /* Or your desired left value */
+      transform: translate(0, -50%); /* Or your desired transform */
+      width: 100%; /* Ensure it takes full width if needed */
+      height: 100%; /* Ensure it takes full height if needed to center children within it */
+    }
