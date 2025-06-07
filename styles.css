@@ -4,7 +4,7 @@
     font-weight: 400;
     font-style: normal;
   }
-.eb-garamond-600-regular{
+.eb-garamond-600-regular {
     font-family: "EB Garamond", serif;
     font-optical-sizing: auto;
     font-weight: 600;
@@ -64,6 +64,10 @@
 .bgimg-4 {
   background-image: url(./assets/worship-morning.jpg);
   min-height: 100%;
+}
+.bgimg-music {
+  background-image: url(./assets/steadfast-music-min.jpeg);
+  min-width: 100%;
 }
 
 /* @media only screen and (max-device-width: 1000px) {
