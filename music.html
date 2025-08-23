@@ -125,21 +125,23 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
       <div class="col-md-4">
         <div class="pb-4"><img src="./assets/Worship-New-Old_8.5x11-web-510x660.jpg" width="100%"></div>
         
-        <div class=""><h5>Currently Playing:&nbsp;</h5> <p id="currently-playing">Title of Currently Palying Audio</p></div>
+        <div class=""><h5>Currently Playing:&nbsp;</h5> <p id="oldNewVolOneCurrentPlay">Title of Currently Palying Audio</p></div>
         <audio id="oldNewVolOne" controls> 
           <source id="oldNewVolOneSrc" src="" type="audio/mpeg">
           Your browser does not support the audio element.
         </audio>
       </div>
       <div class="col-md-7">
-        <h3>Worship New & Old, Volume 2</h3>
+        <h3>Worship New & Old, Volume 1</h3>
         <p class="lead">Arranged by John Bolin<br>Orchestrated by Daniel Semsen</p>
         
     <script>
-       function changeOldNewVolOneAudio(newAudioLink) {
+       function changeOldNewVolOneAudio(newAudioLink, currentTitle) {
         const audioPlayer = document.getElementById('oldNewVolOne')
         const audioSource = document.getElementById('oldNewVolOneSrc')
+        const playingTitle = document.getElementById('oldNewVolOneCurrentPlay')
 
+        playingTitle.innerHTML = currentTitle
         audioSource.src = newAudioLink
         audioPlayer.load()
         audioPlayer.play()
@@ -147,95 +149,72 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
     </script>
 
         <ol class="song-list">
-          <li><b>Praise You Anywhere</b> <span class="badge bg-secondary" type="button" onclick="changeOldNewVolOneAudio('https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/01-Praise-You-Anywhere---1701A23C003.mp3')">Play</span>
+          <li><b>Praise You Anywhere</b> <span class="badge bg-secondary" type="button" onclick="changeOldNewVolOneAudio('https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/01-Praise-You-Anywhere---1701A23C003.mp3', '1. Praise You Anywhere')">Play</span>
             <ul>
               <li><i>with</i> Doxology</li>
             </ul>
           </li>
 
-          <li><b>Great Things</b> <span class="badge bg-secondary" type="button" onclick="changeOldNewVolOneAudio('https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/02-Great-Things---1701A23C003.mp3')">Play</span>
+          <li><b>Great Things</b> <span class="badge bg-secondary" type="button" onclick="changeOldNewVolOneAudio('https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/02-Great-Things---1701A23C003.mp3', '2. Great Things')">Play</span>
             <ul>
               <li><i>with</i> Crown Him with Many Crowns</li>
             </ul>
           </li>
-          <li><b>Praise to the Lord, the Almighty</b>  <span class="badge bg-secondary" type="button" onclick="changeOldNewVolOneAudio('https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/03-Praise-to-the-Lord-the-Almighty---1701A23C003.mp3')">Play</span>
+          <li><b>Praise to the Lord, the Almighty</b>  <span class="badge bg-secondary" type="button" onclick="changeOldNewVolOneAudio('https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/03-Praise-to-the-Lord-the-Almighty---1701A23C003.mp3', '3. Praise to the Lord, the Almighty')">Play</span>
             <ul>
               <li><i>with</i> Gratitude </li> 
               <li><i>and</i> Blessed Assurance</li>
             </ul>
           </li>
 
-          <li><b>There Is a Fountain</b> <span class="badge bg-secondary" type="button" onclick="changeOldNewVolOneAudio('https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/04-There-Is-a-Fountain---1701A23C003.mp3')">Play</span>
+          <li><b>There Is a Fountain</b> <span class="badge bg-secondary" type="button" onclick="changeOldNewVolOneAudio('https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/04-There-Is-a-Fountain---1701A23C003.mp3', '4. There Is a Fountain')">Play</span>
             <ul>
               <li><i>with</i> Glory to His Name</li> <li>Thank you Jesus for the Blood</li> <li><i>and</i> Jesus Paid It All</li>
             </ul>
           </li>
           
-          <li><b>'Tis So Sweet to Trust In Jesus</b> <span class="badge bg-secondary" type="button" onclick="changeOldNewVolOneAudio('https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/05-Tis-So-Sweet-to-Trust-in-Jesus---1701A23C003.mp3')">Play</span>
+          <li><b>'Tis So Sweet to Trust In Jesus</b> <span class="badge bg-secondary" type="button" onclick="changeOldNewVolOneAudio('https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/05-Tis-So-Sweet-to-Trust-in-Jesus---1701A23C003.mp3', '5. Tis So Sweet to Trust in Jesus')">Play</span>
             <ul>
               <li><i>with</i> Goodness of God</li>
               <li><i>and</i> Way Maker</li>
             </ul>
           </li>
           
-          <li><b>This Is Our God</b> <span class="badge bg-secondary" type="button" onclick="changeOldNewVolOneAudio('https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/06-This-Is-Our-God---1701A23C003.mp3')">Play</span>
+          <li><b>This Is Our God</b> <span class="badge bg-secondary" type="button" onclick="changeOldNewVolOneAudio('https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/06-This-Is-Our-God---1701A23C003.mp3', '6. This Is Our God')">Play</span>
             <ul>
               <li><i>with</i> How Great Thou Art</li>
             </ul>
           </li>
 
-          <li><b>I Need Thee Every Hour</b> <span class="badge bg-secondary" type="button" onclick="changeOldNewVolOneAudio('https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/07-I-Need-Thee-Every-Hour---1701A23C003.mp3')">Play</span>
+          <li><b>I Need Thee Every Hour</b> <span class="badge bg-secondary" type="button" onclick="changeOldNewVolOneAudio('https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/07-I-Need-Thee-Every-Hour---1701A23C003.mp3', '7. I Need Thee Every Hour')">Play</span>
             <ul>
               <li><i>with</i> Same God</li>
               <li><i>and</i> Lord, I Need You</li>
             </ul>
           </li>
           
-          <li><b>There's Nothing That Our God Can't Do</b> <span class="badge bg-secondary" type="button" onclick="changeOldNewVolOneAudio('https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/08-Theres-Nothing-That-Our-God-Cant-Do---1701A23C003.mp3')">Play</span>
+          <li><b>There's Nothing That Our God Can't Do</b> <span class="badge bg-secondary" type="button" onclick="changeOldNewVolOneAudio('https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/08-Theres-Nothing-That-Our-God-Cant-Do---1701A23C003.mp3', '8. Theres Nothing That Our God Cant Do')">Play</span>
             <ul>
               <li><i>with</i> All Hail the Power of Jesus Name</li>
             </ul>
           </li>
           
-          <li><b>Son of Suffering</b> <span class="badge bg-secondary" type="button" onclick="changeOldNewVolOneAudio('https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/09-Son-of-Suffering---1701A23C003.mp3')">Play</span>
+          <li><b>Son of Suffering</b> <span class="badge bg-secondary" type="button" onclick="changeOldNewVolOneAudio('https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/09-Son-of-Suffering---1701A23C003.mp3', '9. Son of Suffering')">Play</span>
             <ul>
               <li><i>with</i> Nothing But the Blood</li>
             </ul>
           </li>
 
-          <li><b>Holy, Holy, Holy</b> <span class="badge bg-secondary" type="button" onclick="changeOldNewVolOneAudio('https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/10-Holy-Holy-Holy---1701A23C003.mp3')">Play</span>
+          <li><b>Holy, Holy, Holy</b> <span class="badge bg-secondary" type="button" onclick="changeOldNewVolOneAudio('https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/10-Holy-Holy-Holy---1701A23C003.mp3', '10. Holy, Holy, Holy')">Play</span>
             <ul>
               <li><i>with</i> Holy Forever</li>
               <li><i>and</i> Agnus Dei</li>
             </ul>
           </li>
         </ol>
-
       </div>
     </div>
 
-    
-    <div class="row">
-      <div class="col-md-4">
-        <h5>Praise You Anywhere <br><span class="lead"><i>with</i> Doxology</span></h5>
-        <audio controls> <source src="https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/01-Praise-You-Anywhere---1701A23C003.mp3" type="audio/mpeg"></audio>
-      </div>
-      <div class="col-md-4"><h5>Great Things <br><span class="lead"><i>with</i> Crown Him with Many Crowns</span></h5>
-        <audio controls> <source src="https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/02-Great-Things---1701A23C003.mp3" type="audio/mpeg"></audio></div>
-      <div class="col-md-4"><h5>Praise to the Lord, the Almighty <br><span class="lead">with Gratitude and Blessed Assurance</span></h5>
-        <audio controls> <source src="https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/03-Praise-to-the-Lord-the-Almighty---1701A23C003.mp3" type="audio/mpeg"></audio></div>
-    </div>
-    <div class="row">
-      <div class="col-md-4"></div>
-      <div class="col-md-4"></div>
-      <div class="col-md-4"></div>
-    </div>
-    <div class="row">
-      <div class="col-md-4"></div>
-      <div class="col-md-4"></div>
-      <div class="col-md-4"></div>
-    </div> 
-  </div>
 </section>
 
 <section id="onlineGiving" class="gmc-bg-sage rf-py-75">
