@@ -91,7 +91,7 @@
     
     <p>God is steadfast. Therefore, His love is steadfast – unwavering, faithful, and kind.</p>
     
-    <p>In recent months this word has come back to the front of my mind.  As we have stepped out in faith, defending what we we believe, defending the Scriptures, we are embodying the very meaning of steadfast.  We are standing firm, resolute, unwavering on the scriptures.  We are placing our faith in God.  We are remaining steadfast in God's grace and love, revealing His Word, Jesus Christ, to the world we serve in, with the goal to bring everyone into fellowship.  God will always remain steadfast in his love for us. So, we must remain steadfast in our love for him.  ~ Samuel Wigal</p>
+    <p>In recent months this word has come back to the front of my mind.  As we have stepped out in faith, defending what we we believe, defending the Scriptures, we are embodying the very meaning of steadfast.  We are standing firm, resolute, unwavering on the scriptures.  We are placing our faith in God.  We are remaining steadfast in God's grace and love, revealing His Word, Jesus Christ, to the world we serve in, with the goal to bring everyone into fellowship.  God will always remain steadfast in his love for us. So, we must remain steadfast in our love for him.  ~ Samuel Wigal <i>(September 2024)</i></p>
     
     <blockquote class="eb-garamond-400-italic pb-4" style="font-size: 1.5rem ">Your lovingkindness is better than life, my lips will praise You. ~ Psalm 63:4 (TLV)</blockquote>
     <a href="https://revelationfellowship.churchcenter.com/groups/ministry-teams/steadfast-music-ministries"><img src="./assets/steadfast-music-join-group.png" height="100%" width="70%"></a> </div>
@@ -101,8 +101,7 @@
     <p class="lead" style="letter-spacing: 1.5px">Our Mission:</p>
     <p class="display-5 pb-4" style="font-weight: 600;">Revealing the Word of God...<br>
       Bringing everyone into fellowship...</p>
-    <p Class="pb-3">Here at Revelation Fellowship, God’s Word is the foundation our beliefs.  All our teaching, preaching, study, and learning begins in God’s Word.  We don’t conform the scripture to our beliefs, we conform our beliefs to the scripture.  Jesus Christ is the Word of God, and He is the Way, the Truth, and the Life.  Jesus is The Word, Jesus is God, and God does not change.  Neither shall the scriptures to fit an ever-changing world.  We stand firm on God’s Word as our inerrant foundation.</p>
-    <div class="header-btn-group"> <a class="rf-btn gmc-bg-black" type="button"data-bs-toggle="popover" class="rf-btn gmc-bg-black" data-bs-content="This button could open a new page detailing our beliefs.  Not simply link to another page or document detailing GMC beliefs and doctrines.">Our Beliefs</a> <a class="rf-btn-black" type="button"data-bs-toggle="popover" class="rf-btn gmc-bg-black" data-bs-content="This button will link to the General Conference website &quot;What We Believe&quot;, https://globalmethodist.org/what-we-believe/">Statement of Faith</a> </div>
+    <p Class="pb-3">Here at Revelation Fellowship, God’s Word is the foundation our beliefs.  Our music ministry is rooted in this mission.  Through word and music, we proclaim the truth of the Word of God.  Together we grow through training and practice offering the best of our gifts and talents to God.  </p>
   </div>
   <script>
 var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
@@ -114,54 +113,128 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
 
 <section id="worshipBanner" class="bgimg-2 parallax-content">
   <div class="text-center text-light vertical-center">
-    <h1 class="display-2">Join us for Worship</h1>
-    <p class="display-5">Sundays at 10:45 AM and 6:30 PM.
+    <h1 class="display-2">Join the Steadfast Music Ministry</h1>
+    <p class="display-5">Rehearsal and Fellowship Thursdays at 7 PM</p>
     </div>
   </section>
 
-<section id="contactUs" class="py-5">
+<section id="music-schedule" class="py-5">
   <div class="container py-5">
-    <h1 class="display-1">Meet our Staff</h1>
-    <div class="row">
-      <div class="col-sm p-2">
-        <div class="card mx-auto" style="width:300px"> <img class="card-img-top" src="./assets/pastor_cindy_profile_pic.jpg" alt="Card image" style="width:100%">
-          <div class="card-body">
-            <h4 class="card-title">Cindy Eakle</h4>
-            <p class="card-text">Senior Pastor</p>
-            <a href="mailto:cynthiaeakle@gmail.com" class="btn btn-dark">Send a Message</a> </div>
-        </div>
+    <h1 class="display-1">Music Schedule and Resources</h1>
+    <div class="row pb-5">
+      <div class="col-md-4">
+        <div class="pb-4"><img src="./assets/Worship-New-Old_8.5x11-web-510x660.jpg" width="100%"></div>
+        
+        <div class=""><h5>Currently Playing:&nbsp;</h5> <p id="currently-playing">Title of Currently Palying Audio</p></div>
+        <audio id="oldNewVolOne" controls> 
+          <source id="oldNewVolOneSrc" src="" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
       </div>
-      <div class="col-sm p-2">
-        <div class="card mx-auto" style="width:300px"> <img class="card-img-top" src="./assets/pastor_stacy_profile_pic.jpg" alt="Card image" style="width:100%">
-          <div class="card-body">
-            <h4 class="card-title">Stacy Hoover</h4>
-            <p class="card-text">Pastor of Youth &amp; Family Ministries</p>
-            <a href="mailto:cynthiaeakle@gmail.com" class="btn btn-dark">Send a Message</a> </div>
-        </div>
-      </div>
-      <div class="col-sm p-2">
-        <div class="card mx-auto">
-          <div class="card-header">
-            <h4 class="card-title">Contact Us</h4>
-          </div>
-          <div class="card-body">
-            <h5 class="card-text">Office Hours</h5>
+      <div class="col-md-7">
+        <h3>Worship New & Old, Volume 2</h3>
+        <p class="lead">Arranged by John Bolin<br>Orchestrated by Daniel Semsen</p>
+        
+    <script>
+       function changeOldNewVolOneAudio(newAudioLink) {
+        const audioPlayer = document.getElementById('oldNewVolOne')
+        const audioSource = document.getElementById('oldNewVolOneSrc')
+
+        audioSource.src = newAudioLink
+        audioPlayer.load()
+        audioPlayer.play()
+       }
+    </script>
+
+        <ol class="song-list">
+          <li><b>Praise You Anywhere</b> <span class="badge bg-secondary" type="button" onclick="changeOldNewVolOneAudio('https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/01-Praise-You-Anywhere---1701A23C003.mp3')">Play</span>
             <ul>
-              <li>Mon: 9:00 AM — 11:30 AM &amp; 1:00 PM — 3:00 PM</li>
-              <li>Tue: 9:00 AM — 11:30 AM &amp; 1:00 PM — 3:00 PM</li>
-              <li>Wed: 9:00 AM — 11:30 AM &amp; 1:00 PM — 3:00 PM</li>
-              <li>Thur: 9:00 AM — 11:30 AM &amp; 1:00 PM — 3:00 PM</li>
-              <li>Friday &amp; Saturday: Closed</li>
-              <li class="small"><em>These hours are subject to change according to pastors' schedule.</em></li>
+              <li><i>with</i> Doxology</li>
             </ul>
-            <h5 class="card-text">Our Location</h5>
-            <p class="card-text ps-4">2807 Murdoch Avenue<br>
-              Parkersburg, WV 26101</p>
-          </div>
-          <div class="card-footer"> <a href="mailto:revelationfellowshipgmc@gmail.com" class="btn btn-dark">Office Email</a> </div>
-        </div>
+          </li>
+
+          <li><b>Great Things</b> <span class="badge bg-secondary" type="button" onclick="changeOldNewVolOneAudio('https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/02-Great-Things---1701A23C003.mp3')">Play</span>
+            <ul>
+              <li><i>with</i> Crown Him with Many Crowns</li>
+            </ul>
+          </li>
+          <li><b>Praise to the Lord, the Almighty</b>  <span class="badge bg-secondary" type="button" onclick="changeOldNewVolOneAudio('https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/03-Praise-to-the-Lord-the-Almighty---1701A23C003.mp3')">Play</span>
+            <ul>
+              <li><i>with</i> Gratitude </li> 
+              <li><i>and</i> Blessed Assurance</li>
+            </ul>
+          </li>
+
+          <li><b>There Is a Fountain</b> <span class="badge bg-secondary" type="button" onclick="changeOldNewVolOneAudio('https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/04-There-Is-a-Fountain---1701A23C003.mp3')">Play</span>
+            <ul>
+              <li><i>with</i> Glory to His Name</li> <li>Thank you Jesus for the Blood</li> <li><i>and</i> Jesus Paid It All</li>
+            </ul>
+          </li>
+          
+          <li><b>'Tis So Sweet to Trust In Jesus</b> <span class="badge bg-secondary" type="button" onclick="changeOldNewVolOneAudio('https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/05-Tis-So-Sweet-to-Trust-in-Jesus---1701A23C003.mp3')">Play</span>
+            <ul>
+              <li><i>with</i> Goodness of God</li>
+              <li><i>and</i> Way Maker</li>
+            </ul>
+          </li>
+          
+          <li><b>This Is Our God</b> <span class="badge bg-secondary" type="button" onclick="changeOldNewVolOneAudio('https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/06-This-Is-Our-God---1701A23C003.mp3')">Play</span>
+            <ul>
+              <li><i>with</i> How Great Thou Art</li>
+            </ul>
+          </li>
+
+          <li><b>I Need Thee Every Hour</b> <span class="badge bg-secondary" type="button" onclick="changeOldNewVolOneAudio('https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/07-I-Need-Thee-Every-Hour---1701A23C003.mp3')">Play</span>
+            <ul>
+              <li><i>with</i> Same God</li>
+              <li><i>and</i> Lord, I Need You</li>
+            </ul>
+          </li>
+          
+          <li><b>There's Nothing That Our God Can't Do</b> <span class="badge bg-secondary" type="button" onclick="changeOldNewVolOneAudio('https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/08-Theres-Nothing-That-Our-God-Cant-Do---1701A23C003.mp3')">Play</span>
+            <ul>
+              <li><i>with</i> All Hail the Power of Jesus Name</li>
+            </ul>
+          </li>
+          
+          <li><b>Son of Suffering</b> <span class="badge bg-secondary" type="button" onclick="changeOldNewVolOneAudio('https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/09-Son-of-Suffering---1701A23C003.mp3')">Play</span>
+            <ul>
+              <li><i>with</i> Nothing But the Blood</li>
+            </ul>
+          </li>
+
+          <li><b>Holy, Holy, Holy</b> <span class="badge bg-secondary" type="button" onclick="changeOldNewVolOneAudio('https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/10-Holy-Holy-Holy---1701A23C003.mp3')">Play</span>
+            <ul>
+              <li><i>with</i> Holy Forever</li>
+              <li><i>and</i> Agnus Dei</li>
+            </ul>
+          </li>
+        </ol>
+
       </div>
     </div>
+
+    
+    <div class="row">
+      <div class="col-md-4">
+        <h5>Praise You Anywhere <br><span class="lead"><i>with</i> Doxology</span></h5>
+        <audio controls> <source src="https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/01-Praise-You-Anywhere---1701A23C003.mp3" type="audio/mpeg"></audio>
+      </div>
+      <div class="col-md-4"><h5>Great Things <br><span class="lead"><i>with</i> Crown Him with Many Crowns</span></h5>
+        <audio controls> <source src="https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/02-Great-Things---1701A23C003.mp3" type="audio/mpeg"></audio></div>
+      <div class="col-md-4"><h5>Praise to the Lord, the Almighty <br><span class="lead">with Gratitude and Blessed Assurance</span></h5>
+        <audio controls> <source src="https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/03-Praise-to-the-Lord-the-Almighty---1701A23C003.mp3" type="audio/mpeg"></audio></div>
+    </div>
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4"></div>
+      <div class="col-md-4"></div>
+    </div>
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4"></div>
+      <div class="col-md-4"></div>
+    </div> 
   </div>
 </section>
 

@@ -188,3 +188,10 @@
       width: 100%; /* Ensure it takes full width if needed */
       height: 100%; /* Ensure it takes full height if needed to center children within it */
     }
+.song-list ul {
+  list-style-type: none;
+}
+
+.song-title{
+  font-weight: bold;
+}
