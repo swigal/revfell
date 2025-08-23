@@ -18,18 +18,31 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 <!-- Latest compiled and minified CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
 <!-- Latest compiled JavaScript --> 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
 <script src="https://kit.fontawesome.com/2c4e0850e9.js" crossorigin="anonymous"></script>
+<script src="scripts.js"></script>
 </head>
 <style>
   @media only screen and (max-device-width: 400px){
     .display-5 {font-size: 20px;}
 
   }
+      .material-icons {
+      vertical-align: middle; /* Aligns the icon to the middle of the text */
+      /* You might need to adjust font-size or line-height for finer control */
+      font-size: 40px;
+      text-decoration: none;
+      color: black;
+      cursor: pointer;
+    }
+    .material-icons:hover {text-shadow: 0px 0px 5px grey;}
+    .smaller-text
   </style>
 <body>
 <header> 
@@ -87,7 +100,7 @@
 <section id="services" class="py-5">
   <div class="container py-5">
     <h1 class="pb-3">About Steadfast Music Ministries</h1>
-    <p >Every since I began working in worship and music ministries at church, the word steadfast has been one word I kept coming back to.  According to dictionary.com, steadfast means to be fixed or firm in a direction or purpose – unwavering. The the word for steadfast in the original Hebrew is chesed (pronounced kheh’-sed) and it refers to God’s devout loving-kindness, mercy, and faithfulness at the very core of His character and actions.
+    <p >Ever since I began working in worship and music ministries at church, the word steadfast has been one word I kept coming back to.  According to dictionary.com, steadfast means to be fixed or firm in a direction or purpose – unwavering. The the word for steadfast in the original Hebrew is chesed (pronounced kheh’-sed) and it refers to God’s devout loving-kindness, mercy, and faithfulness at the very core of His character and actions.
     
     <p>God is steadfast. Therefore, His love is steadfast – unwavering, faithful, and kind.</p>
     
@@ -103,29 +116,26 @@
       Bringing everyone into fellowship...</p>
     <p Class="pb-3">Here at Revelation Fellowship, God’s Word is the foundation our beliefs.  Our music ministry is rooted in this mission.  Through word and music, we proclaim the truth of the Word of God.  Together we grow through training and practice offering the best of our gifts and talents to God.  </p>
   </div>
-  <script>
-var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-  return new bootstrap.Popover(popoverTriggerEl)
-})
-</script> 
 </section>
 
 <section id="worshipBanner" class="bgimg-2 parallax-content">
   <div class="text-center text-light vertical-center">
     <h1 class="display-2">Join the Steadfast Music Ministry</h1>
     <p class="display-5">Rehearsal and Fellowship Thursdays at 7 PM</p>
-    </div>
-  </section>
+  </div>
+</section>
 
 <section id="music-schedule" class="py-5">
   <div class="container py-5">
     <h1 class="display-1">Music Schedule and Resources</h1>
     <div class="row pb-5">
-      <div class="col-md-4">
+      <div class="col-md-5">
         <div class="pb-4"><img src="./assets/Worship-New-Old_8.5x11-web-510x660.jpg" width="100%"></div>
         
-        <div class=""><h5>Currently Playing:&nbsp;</h5> <p id="oldNewVolOneCurrentPlay">Title of Currently Palying Audio</p></div>
+        <div class="">
+          <h5>Currently Playing:&nbsp;</h5> 
+          <p id="oldNewVolOneCurrentPlay">Title of Currently Palying Audio</p>
+        </div>
         <audio id="oldNewVolOne" controls> 
           <source id="oldNewVolOneSrc" src="" type="audio/mpeg">
           Your browser does not support the audio element.
@@ -135,20 +145,7 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
         <h3>Worship New & Old, Volume 1</h3>
         <p class="lead">Arranged by John Bolin<br>Orchestrated by Daniel Semsen</p>
         
-    <script>
-       function changeOldNewVolOneAudio(newAudioLink, currentTitle) {
-        const audioPlayer = document.getElementById('oldNewVolOne')
-        const audioSource = document.getElementById('oldNewVolOneSrc')
-        const playingTitle = document.getElementById('oldNewVolOneCurrentPlay')
-
-        playingTitle.innerHTML = currentTitle
-        audioSource.src = newAudioLink
-        audioPlayer.load()
-        audioPlayer.play()
-       }
-    </script>
-
-        <ol class="song-list">
+        <ul class="song-list">
           <li><b>Praise You Anywhere</b> <span class="badge bg-secondary" type="button" onclick="changeOldNewVolOneAudio('https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/01-Praise-You-Anywhere---1701A23C003.mp3', '1. Praise You Anywhere')">Play</span>
             <ul>
               <li><i>with</i> Doxology</li>
@@ -211,10 +208,84 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
               <li><i>and</i> Agnus Dei</li>
             </ul>
           </li>
-        </ol>
+        </ul>
       </div>
     </div>
+  </div>
+</section>
 
+<section class="container py-5">
+  <div class="row">
+    <div class="col-md-5">
+      <img src="./assets/WNO-Vol-2_8.5x11-web-510x660.jpg" width="100%">
+      <div class="">
+          <h5>Currently Playing:&nbsp;</h5> 
+          <p id="oldNewVolTwoCurrentPlay">Title of Currently Palying Audio</p>
+        </div>
+        <audio id="oldNewVolTwo" controls> 
+          <source id="oldNewVolTwoSrc" src="" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+    </div>
+    <div class="col-md-7">
+      <h3>Worship New & Old, Volume 2</h3>
+      <p>Modern and classic songs of praise for congregational worship</p>
+      <p class="lead">Arranged by John Bolin<br>Orchestrated by Daniel Semsen</p>
+
+      <ul class="list-group">
+        <li class="list-group-item d-flex">
+          <div class="material-symbols-outlined material-icons" type="button" onclick="changeOldNewVolTwoAudio('https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/01-Jehovah---Listening_1701A24C037.mp3', 'Jehova')">play_circle</div> 
+          <div class="ps-3"><b>Jehova</b>&nbsp;<span class="small"><i>with</i> All Hail the Power of Jesus Name <i>and</i> How Great Thou Art</span></div>
+        </li>
+
+        <li class="list-group-item d-flex">
+          <div class="material-symbols-outlined material-icons" type="button" onclick="changeOldNewVolTwoAudio('https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/02-Praise---Listening_1701A24C037.mp3', 'Praise')">play_circle</div> 
+          <div class="ps-3"><b>Praise</b>&nbsp;<span class="small"><i>with</i> To God Be the Glory</span></div>
+        </li>
+
+        <li class="list-group-item d-flex">
+          <div class="material-symbols-outlined material-icons" type="button" onclick="changeOldNewVolTwoAudio('https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/03-Blessed-Assurance---Listening_1701A24C037.mp3', 'Blessed Assurance')">play_circle</div> 
+          <div class="ps-3"><b>Blessed Assurance</b>&nbsp;<span class="small"><i>with</i> You've Already Won <i>and</i> It Is WEll with My Soul</span></div>
+        </li>
+
+        <li class="list-group-item d-flex">
+          <div class="material-symbols-outlined material-icons" type="button" onclick="changeOldNewVolTwoAudio('https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/04-Great-Is-the-Lord---Listening_1701A24C037.mp3', 'Great Is the Lord')">play_circle</div> 
+          <div class="ps-3"><b>Great Is the Lord</b>&nbsp;<span class="small"><i>with</i> I've Witnessed It <i>and</i> Great Is Thy Faithfulness</span></div>
+        </li>
+
+        <li class="list-group-item d-flex">
+          <div class="material-symbols-outlined material-icons" type="button" onclick="changeOldNewVolTwoAudio('https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/05-Victory-in-Jesus---Listening_1701A24C037.mp3', 'Victory In Jesus')">play_circle</div> 
+          <div class="ps-3"><b>Victory In Jesus</b>&nbsp;<span class="small"><i>with</i> New Name Written Down in Glory</span></div>
+        </li>
+        
+        <li class="list-group-item d-flex">
+          <div class="material-symbols-outlined material-icons" type="button" onclick="changeOldNewVolTwoAudio('https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/06-Joyful-Joyful-We-Adore-Thee---Listening_1701A24C037.mp3', 'Joyful, Joyful, We Adore Thee')">play_circle</div> 
+          <div class="ps-3"><b>Joyful, Joyful, We ADore Thee</b>&nbsp;<span class="small"><i>with</i> The Joy</span></div>
+        </li>
+
+        <li class="list-group-item d-flex">
+          <div class="material-symbols-outlined material-icons" type="button" onclick="changeOldNewVolTwoAudio('https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/07-Firm-Foundation-He-Wont---Listening_1701A24C037.mp3', 'Firm Foundation (He Wont)')">play_circle</div> 
+          <div class="ps-3"><b>Firm Foundation (He Won't)</b>&nbsp;<span class="small"><i>with</i> How Firm a Foundation</span></div>
+        </li>
+
+        <li class="list-group-item d-flex">
+          <div class="material-symbols-outlined material-icons" type="button" onclick="changeOldNewVolTwoAudio('https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/08-Leaning-on-the-Everlasting-Arms---Listening_1701A24C037.mp3', 'Leaning on the Everlasting Arms')">play_circle</div> 
+          <div class="ps-3"><b>Leaning on the Everlasting Arms</b>&nbsp;<span class="small"><i>with</i> Standing on the Promises <i>and</i> You Keep Your Promises</span></div>
+        </li>
+
+        <li class="list-group-item d-flex">
+          <div class="material-symbols-outlined material-icons" type="button" onclick="changeOldNewVolTwoAudio('https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/09-Take-My-Life-and-Let-It-Be-Consecrated---Listening_1701A24C037.mp3', 'Take My Life and Let It Be Consecrated')">play_circle</div> 
+          <div class="ps-3"><b>Take My Life and Let It Be Consecrated</b>&nbsp;<span class="small"><i>with</i> Chrsit Be Magnifide <i>and</i> I Will Exalt Thee</span></div>
+        </li>
+
+        <li class="list-group-item d-flex">
+          <div class="material-symbols-outlined material-icons" type="button" onclick="changeOldNewVolTwoAudio('https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/10-I-Surrender-All---Listening_1701A24C037.mp3', 'I Surrender All')">play_circle</div> 
+          <div class="ps-3"><b>I Surrender All</b>&nbsp;<span class="small"><i>with</i> Trust in God <i>and</i> Great Are You, Lord</span></div>
+        </li>
+
+      </ul>
+    </div>
+  </div>
 </section>
 
 <section id="onlineGiving" class="gmc-bg-sage rf-py-75">

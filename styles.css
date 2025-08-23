@@ -188,7 +188,7 @@
       width: 100%; /* Ensure it takes full width if needed */
       height: 100%; /* Ensure it takes full height if needed to center children within it */
     }
-.song-list ul {
+ul{
   list-style-type: none;
 }
 
