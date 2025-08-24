@@ -27,47 +27,41 @@
 </head>
 
 <body>
-    <!-- temporary navigation for testing and version display -->
-      <div class="btn-group"> 
-        <a href="index.html" class="btn btn-light">Version 1</a> 
-        <a href="home-version2.html" class="btn btn-light">Version 2 <span class="badge bg-danger">NEW</span></a>
-        <a href="revfell-nav.html" class="btn btn-primary">Full NavBar</a>
-
-      </div>
-	
-<!--Fully built navigation bar -->
-	<nav class="navbar navbar-expand-lg bg-light navbar-light">
+<!--Fully built navigation bar (updated 8/23/2025 disabled non-existing pages and addded existing ones.)-->
+<header>
+  <nav class="navbar navbar-expand-lg bg-light navbar-light">
 		<div class="container">
-			<a class="navbar-brand" href="#"><img src="./assets/RFGMC-fulllogo-black.png" style="width: auto; height: 10vw; max-height: 90px;" alt="Revelation Fellowship Logo"></a>
+			<a class="navbar-brand" href="index.html"><img src="./assets/RFGMC-fulllogo-black.png" style="width: auto; height: 10vw; max-height: 90px;" alt="Revelation Fellowship Logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
 			<ul class="navbar-nav ms-auto">
 				<li class="nav-item">
-					<a href="home-version2.html" class="nav-link">Home</a></li>
+					<a href="index.html" class="nav-link">Home</a></li>
 				<li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Revealing</a>
                     <ul class="dropdown-menu">
                         <li><h5 class="dropdown-header">Worship</h5></li>
                         <li><a class="dropdown-item" href="worship-services.html">Worship Services</a></li>
-                        <li><a class="dropdown-item" href="#">Bulletin Announcements</a></li>
-                        <li><a class="dropdown-item" href="#">Live Stream</a></li>
+                        <li><a class="dropdown-item disabled" href="#">Bulletin Announcements</a></li>
+                        <li><a class="dropdown-item disabled" href="#">Live Stream</a></li>
                         <li><h5 class="dropdown-header">Spiritual Growth</h5></li>
-                        <li><a class="dropdown-item" href="#">Sunday School</a></li>
-                        <li><a class="dropdown-item" href="#">Small Groups</a></li>
+                        <li><a class="dropdown-item disabled" href="#">Sunday School</a></li>
+                        <li><a class="dropdown-item disabled" href="#">Small Groups</a></li>
+                        <li><a class="dropdown-item" href="music.html">Steadfast Music Minsitries</a></li>
                     </ul>
                 </li>
 				<li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Fellowship</a>
                     <ul class="dropdown-menu">
                         <li><h5 class="dropdown-header">About Us</h5></li>
-                        <li><a class="dropdown-item" href="#">Missions</a></li>
-                        <li><a class="dropdown-item" href="#">Our Beliefs</a></li>
-                        <li><a class="dropdown-item" href="#">Let's Connect</a></li>
+                        <li><a class="dropdown-item disabled" href="#">Missions</a></li>
+                        <li><a class="dropdown-item disabled" href="#">Our Beliefs</a></li>
+                        <li><a class="dropdown-item disabled" href="#">Let's Connect</a></li>
                         <li><h5 class="dropdown-header">What's Happening</h5></li>
-                        <li><a class="dropdown-item" href="#">Graceful Gatherings</a></li>
-                        <li><a class="dropdown-item" href="#">Upcoming Events</a></li>
+                        <li><a class="dropdown-item disabled" href="#">Graceful Gatherings</a></li>
+                        <li><a class="dropdown-item disabled" href="#">Upcoming Events</a></li>
                     </ul>
                 </li>
 				<li class="nav-item">
@@ -77,7 +71,7 @@
 		</div>
         </div>
 	</nav>
-	
+</header>
  <main class="">
         <section id="home" class="bgimg-4 bgimg-format">
   <div class="container pb-5 text-light">
