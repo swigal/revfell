@@ -48,6 +48,13 @@
   background-size: cover;
 }
 
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .bgimg-format {
+    background-attachment: scroll;
+  }
+}
+
 /* First image (Logo. Full height) */
 .bgimg-1 {
   background-image: url('./assets/clouds_22344bc.jpg');
