@@ -18,8 +18,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 <!-- Latest compiled and minified CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -40,6 +39,10 @@
       text-decoration: none;
       color: black;
       cursor: pointer;
+    }
+
+    .vertical-align-middle {
+      vertical-align: middle;
     }
     .material-icons:hover {text-shadow: 0px 0px 5px grey;}
   </style>
@@ -108,8 +111,8 @@
         </audio>
         </div>
         
-        <div class="mt-2 text-center">
-          <a href="/music/Worship-New-and-Old_Choral-Book_1701A23C001PREVIEW.pdf" target="_blank" class="rf-btn gmc-bg-scarlet">Choral Book Preview</a>
+        <div class="mt-2 mb-5 text-center">
+          <a href="/music/wnao-v1/Worship-New-and-Old_Choral-Book_1701A23C001PREVIEW.pdf" target="_blank" class="rf-btn gmc-bg-scarlet">Choral Book Preview</a>
         </div>
       </div>
       <div class="col-md-7">
@@ -120,60 +123,78 @@
       <ul class="list-group">
         <li class="list-group-item d-flex">
           <div class="material-symbols-outlined material-icons" type="button" onclick="changeOldNewVolOneAudio('https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/01-Praise-You-Anywhere---1701A23C003.mp3', '1. Praise You Anywhere')">play_circle</div> 
-          <div class="ps-3"><b>Praise You Anywhere</b>&nbsp;<span class="small"><i>with</i> Doxology</span></div>
+          <div class="ps-3"><b>Praise You Anywhere</b> <br> 
+            <span class="small"><i>with</i> Doxology</span></div>
+          <a class="material-symbols-outlined material-icons ms-auto" type="button" href="/music/wnao-v1/01-Praise-You-Anywhere---1701A23C003.mp3" download>download</a>       
         </li>
 
         <li class="list-group-item d-flex">
           <div class="material-symbols-outlined material-icons" type="button" onclick="changeOldNewVolOneAudio('https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/02-Great-Things---1701A23C003.mp3', '2. Great Things')">play_circle</div> 
-          <div class="ps-3"><b>Great Things</b>&nbsp;<span class="small"><i>with</i> Crown Him with Many Crowns</span></div>
+          <div class="ps-3"><b>Great Things</b> <br> 
+            <span class="small"><i>with</i> Crown Him with Many Crowns</span></div>
+          <a class="material-symbols-outlined material-icons ms-auto" type="button" href="/music/wnao-v1/02-Great-Things---1701A23C003.mp3" downaload>download</a>
         </li>
 
         <li class="list-group-item d-flex">
           <div class="material-symbols-outlined material-icons" type="button" onclick="changeOldNewVolOneAudio('https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/03-Praise-to-the-Lord-the-Almighty---1701A23C003.mp3', '3. Praise to the Lord, the Almighty')">play_circle</div> 
-          <div class="ps-3"><b>Praise to the Lord, the Almighty</b>&nbsp;<span class="small"><i>with</i> Gratitude <i>and</i> Blessed Assurance</span></div>
+          <div class="ps-3"><b>Praise to the Lord, the Almighty</b> <br>
+            <span class="small"><i>with</i> Gratitude <i>and</i> Blessed Assurance</span></div>
+          <a class="material-symbols-outlined material-icons ms-auto" type="button" href="/music/wnao-v1/03-Praise-to-the-Lord-the-Almighty---1701A23C003.mp3" download>download</a>
         </li>
 
         <li class="list-group-item d-flex">
           <div class="material-symbols-outlined material-icons" type="button" onclick="changeOldNewVolOneAudio('https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/04-There-Is-a-Fountain---1701A23C003.mp3', '4. There Is a Fountain')">play_circle</div> 
-          <div class="ps-3"><b>There Is a Fountain</b>&nbsp;<span class="small"><i>with</i> Glory to His Name, Thank You Jesus, for the Blood <i>and</i> Jesus Paid It All</span></div>
+          <div class="ps-3"><b>There Is a Fountain</b> <br>
+            <span class="small"><i>with</i> Glory to His Name, Thank You Jesus, for the Blood <i>and</i> Jesus Paid It All</span></div>
+          <a class="material-symbols-outlined material-icons ms-auto" type="button" href="/music/wnao-v1/04-There-Is-a-Fountain---1701A23C003.mp3" download>download</a>
         </li>
 
         <li class="list-group-item d-flex">
           <div class="material-symbols-outlined material-icons" type="button" onclick="changeOldNewVolOneAudio('https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/05-Tis-So-Sweet-to-Trust-in-Jesus---1701A23C003.mp3', '5. Tis So Sweet to Trust in Jesus')">play_circle</div> 
-          <div class="ps-3"><b>'Tis So Sweet to Trust in Jesus</b>&nbsp;<span class="small"><i>with</i> Goodness of God <i>and</i> Way Maker</span></div>
+          <div class="ps-3"><b>'Tis So Sweet to Trust in Jesus</b> <br>
+            <span class="small"><i>with</i> Goodness of God <i>and</i> Way Maker</span></div>
+          <a class="material-symbols-outlined material-icons ms-auto" type="button" href="/music/wnao-v1/05-Tis-So-Sweet-to-Trust-in-Jesus---1701A23C003.mp3" download>download</a>
         </li>
 
         <li class="list-group-item d-flex">
           <div class="material-symbols-outlined material-icons" type="button" onclick="changeOldNewVolOneAudio('https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/06-This-Is-Our-God---1701A23C003.mp3', '6. This Is Our God')">play_circle</div> 
-          <div class="ps-3"><b>This Is Our God</b>&nbsp;<span class="small"><i>with</i> How Great Thou Art</span></div>
+          <div class="ps-3"><b>This Is Our God</b> <br> 
+            <span class="small"><i>with</i> How Great Thou Art</span></div>
+          <a class="material-symbols-outlined material-icons ms-auto" type="button" href="/music/wnao-v1/06-This-Is-Our-God---1701A23C003.mp3" download>download</a>
         </li>
 
         <li class="list-group-item d-flex">
           <div class="material-symbols-outlined material-icons" type="button" onclick="changeOldNewVolOneAudio('https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/07-I-Need-Thee-Every-Hour---1701A23C003.mp3', '7. I Need Thee Every Hour')">play_circle</div> 
-          <div class="ps-3"><b>I Need Thee Every Hour</b>&nbsp;<span class="small"><i>with</i> Same God <i>and</i> Lord, I Need You</span></div>
+          <div class="ps-3"><b>I Need Thee Every Hour</b> <br> 
+            <span class="small"><i>with</i> Same God <i>and</i> Lord, I Need You</span></div>
+          <a class="material-symbols-outlined material-icons ms-auto" type="button" href="/music/wnao-v1/07-I-Need-Thee-Every-Hour---1701A23C003.mp3" download>download</a>
         </li>
 
         <li class="list-group-item d-flex">
           <div class="material-symbols-outlined material-icons" type="button" onclick="changeOldNewVolOneAudio('https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/08-Theres-Nothing-That-Our-God-Cant-Do---1701A23C003.mp3', '8. Theres Nothing That Our God Cant Do')">play_circle</div> 
-          <div class="ps-3"><b>There's Nothing That Our God Can't Do</b>&nbsp;<span class="small"><i>with</i> All Hail the Power of Jesus' Name</span></div>
+          <div class="ps-3"><b>There's Nothing That Our God Can't Do</b><br>
+            <span class="small"><i>with</i> All Hail the Power of Jesus' Name</span></div>
+          <a class="material-symbols-outlined material-icons ms-auto" type="button" href="/music/wnao-v1/08-Theres-Nothing-That-Our-God-Cant-Do---1701A23C003.mp3" download>download</a>
         </li>
 
         <li class="list-group-item d-flex">
           <div class="material-symbols-outlined material-icons" type="button" onclick="changeOldNewVolOneAudio('https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/09-Son-of-Suffering---1701A23C003.mp3', '9. Son of Suffering')">play_circle</div> 
-          <div class="ps-3"><b>Son of Suffering</b>&nbsp;<span class="small"><i>with</i> Nothing But the Blood</span></div>
+          <div class="ps-3"><b>Son of Suffering</b><br>
+            <span class="small"><i>with</i> Nothing But the Blood</span></div>
+          <a class="material-symbols-outlined material-icons ms-auto" type="button" href="/music/wnao-v1/09-Son-of-Suffering---1701A23C003.mp3" download>download</a>
         </li>
 
         <li class="list-group-item d-flex">
           <div class="material-symbols-outlined material-icons" type="button" onclick="changeOldNewVolOneAudio('https://semsenmusicpreviews.s3.us-east-2.amazonaws.com/10-Holy-Holy-Holy---1701A23C003.mp3', '10. Holy, Holy, Holy')">play_circle</div> 
-          <div class="ps-3"><b>Holy, Holy, Holy</b>&nbsp;<span class="small"><i>with</i> Holy Forever <i>and</i> Agnus Dei</span></div>
+          <div class="ps-3"><b>Holy, Holy, Holy</b><br> 
+            <span class="small"><i>with</i> Holy Forever <i>and</i> Agnus Dei</span></div>
+          <a class="material-symbols-outlined material-icons ms-auto" type="button" href="/music/wnao-v1/10-Holy-Holy-Holy---1701A23C003.mp3" download>download</a>
         </li>
 
       </ul>
     </div>
     </div>
   </section>
-
-    
 
 <footer class="bg-light pt-3">
   <div class="container">
