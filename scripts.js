@@ -1,5 +1,6 @@
 /* Place your JavaScript in this file */
-function changeTwentySixScheduleAudio(newAudioLink, currentTitle) {('2026Schedule')
+function changeTwentySixScheduleAudio(newAudioLink, currentTitle) {
+        const audioPlayer = document.getElementById('2026Schedule')
         const audioSource = document.getElementById('2026ScheduleSrc')
         const playingTitle = document.getElementById('2026ScheduleCurrentPlay')
 
