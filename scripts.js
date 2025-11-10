@@ -1,4 +1,13 @@
 /* Place your JavaScript in this file */
+function changeTwentySixScheduleAudio(newAudioLink, currentTitle) {('2026Schedule')
+        const audioSource = document.getElementById('2026ScheduleSrc')
+        const playingTitle = document.getElementById('2026ScheduleCurrentPlay')
+
+        playingTitle.innerHTML = currentTitle
+        audioSource.src = newAudioLink
+        audioPlayer.load()
+        audioPlayer.play()
+       }
 function changeOldNewVolOneAudio(newAudioLink, currentTitle) {
         const audioPlayer = document.getElementById('oldNewVolOne')
         const audioSource = document.getElementById('oldNewVolOneSrc')
