@@ -49,4 +49,9 @@ const genFundExpPie = new Chart(document.getElementById("genFundExpPie"), {
         }],
         labels: ['Office', 'Payroll', 'Rent & Utilities', 'Programs']
     },
+    options: {
+        responsive: true,
+        maintainAspectRatio: true
+    }
+
 })
